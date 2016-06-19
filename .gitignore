@@ -1,0 +1,5 @@
+tests/_reports
+*.*~swp
+.idea
+nbproject
+

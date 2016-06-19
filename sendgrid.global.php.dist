@@ -1,0 +1,10 @@
+<?php
+
+return array(
+    'sendgrid' => array(
+        'api_key' => 'YOUR_API_KEY',
+        'connection_config' => array(
+            'from' => 'noreply@your-domain.com',
+        ),
+    ),
+);

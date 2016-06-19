@@ -1,0 +1,44 @@
+{
+  "name": "andrebian/sendgrid-transport-module",
+  "description": "Zend Framework 2 Module that provides SendGrid as a Transport for Mail.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "framework",
+    "zf2",
+    "module"
+  ],
+  "authors": [
+    {
+      "name": "Andre Cardoso",
+      "email": "andrecardosodev@gmail.com",
+      "role": "creator"
+    }
+  ],
+  "require" : {
+    "php": ">=5.3.3",
+    "zendframework/zend-modulemanager": "2.*",
+    "zendframework/zend-eventmanager": "2.*",
+    "zendframework/zend-servicemanager": "2.*",
+    "sendgrid/sendgrid": "4.0.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.4.*",
+    "mockery/mockery": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "SendGridTransportModule\\": [
+        "src/SendGridTransportModule"
+      ]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SendGridTransportModule\\": [
+        "tests/SendGridTransportModule"
+      ]
+    }
+  },
+  "minimum-stability": "dev"
+}

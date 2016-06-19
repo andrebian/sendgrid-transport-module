@@ -4,9 +4,8 @@
   "type": "library",
   "license": "MIT",
   "keywords": [
-    "framework",
-    "zf2",
-    "module"
+    "module",
+    "zf2"
   ],
   "authors": [
     {

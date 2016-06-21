@@ -1,0 +1,11 @@
+<?php
+
+// Put this config into your mail settings
+return array(
+    'mail' => array(
+        // ... another configurations
+        'sendgrid' => array(
+            'api_key' => 'YOUR_API_KEY',
+        )
+    )
+);

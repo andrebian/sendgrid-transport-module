@@ -34,7 +34,7 @@ class Module
         return array(
             'factories' => array(
                 'SendGridTransport' => function ($sm) {
-                    $config = $sm->get('config');
+                    $config = $sm->get('config')['mail'];
 
                     if (!isset($config['sendgrid'])) {
                         throw new Exception('You must to copy the file "sendgrid.global.php.dist" to your config/autoload and set your API Key');

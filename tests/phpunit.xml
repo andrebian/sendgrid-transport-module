@@ -13,6 +13,7 @@
         </whitelist>
     </filter>
     <logging>
+        <log type="coverage-clover" target="../coverage.xml"></log>
         <log type="coverage-html" target="./_reports/codeCoverage" charset="UTF-8" yui="true" highlight="true" lowUpperBound="35" highLowerBound="75"/>
     </logging>
 </phpunit>

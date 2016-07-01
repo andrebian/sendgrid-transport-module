@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1467334999">
+  <project timestamp="1467334999">
+    <package name="SendGridTransportModule">
+      <file name="/mnt/ARQUIVOS/desenvolvimento/zf-modules/module/SendGridTransportModule/src/SendGridTransportModule/SendGridTransport.php">
+        <class name="SendGridTransport" namespace="SendGridTransportModule" fullPackage="SendGridTransportModule" package="SendGridTransportModule">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="11" coveredelements="11"/>
+        </class>
+        <line num="29" type="method" name="__construct" crap="1" count="1"/>
+        <line num="31" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="39" type="method" name="send" crap="1" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <metrics loc="49" ncloc="31" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="11" coveredelements="11"/>
+      </file>
+    </package>
+    <metrics files="1" loc="49" ncloc="31" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="11" coveredelements="11"/>
+  </project>
+</coverage>

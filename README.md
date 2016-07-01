@@ -1,5 +1,14 @@
 # SendGrid Transport Module for Zend Framework
 
+
+[![Latest Stable Version](https://poser.pugx.org/andrebian/sendgrid-transport-module/v/stable)](https://packagist.org/packages/andrebian/sendgrid-transport-module)
+[![Total Downloads](https://poser.pugx.org/andrebian/sendgrid-transport-module/downloads)](https://packagist.org/packages/andrebian/sendgrid-transport-module)
+[![Latest Unstable Version](https://poser.pugx.org/andrebian/sendgrid-transport-module/v/unstable)](https://packagist.org/packages/andrebian/sendgrid-transport-module)
+[![License](https://poser.pugx.org/andrebian/sendgrid-transport-module/license)](https://packagist.org/packages/andrebian/sendgrid-transport-module)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b3aed2e68b4849e9bbb91d776089bd46)](https://www.codacy.com/app/andrecardosodev/sendgrid-transport-module?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=andrebian/sendgrid-transport-module&amp;utm_campaign=Badge_Grade)
+
+
+
 This module provide SendGrid as a transport for transactional e-mail in Zend Framework 2.
 
 

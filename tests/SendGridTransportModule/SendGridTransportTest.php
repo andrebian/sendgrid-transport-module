@@ -26,12 +26,13 @@ class SendGridTransportTest extends PHPUnit_Framework_TestCase
      */
     public function checkSendMethod()
     {
-        $sendGridResponse = Mockery::mock('SendGrid\Response');
+        $mockery = new Mockery();
+        $sendGridResponse = $mockery->mock('SendGrid\Response');
 
-        $sendGrid = Mockery::mock('SendGrid');
+        $sendGrid = $mockery->mock('SendGrid');
         $sendGrid->shouldReceive('send')->andReturn($sendGridResponse);
 
-        $email = Mockery::mock('SendGrid\Email');
+        $email = $mockery->mock('SendGrid\Email');
         $email->shouldReceive('addTo')->andReturn($email);
         $email->shouldReceive('setFrom')->andReturn($email);
         $email->shouldReceive('setSubject')->andReturn($email);

@@ -29,17 +29,18 @@ return array(
 );
 ```
 
+## USING
 
-## BASIC USAGE
+### Via Service
 
-By default when the **SendGridTransportModule** is loaded a service is registered and ready to use.
+By default, when the **SendGridTransportModule** is loaded a service is registered and ready to use.
 
 ```php
 // In a Controller
 $sendGridTransport = $this->getServiceLocator()->get('SendGridTransport');
 ```
 
-#### Full example
+#### Full example with service
 
 ```php
 use Zend\Mvc\Controller\AbstractActionController;
@@ -48,7 +49,7 @@ use Zend\Mail;
 
 class SomeController extends AbstractActionController
 {
-    public function SomeAction()
+    public function someAction()
     {
         $mail = new Mail\Message();
         $mail->setBody('This is the text of the email.');
@@ -64,10 +65,40 @@ class SomeController extends AbstractActionController
 }
 ```
 
+### Directly
+
+If you need more control, you can use the library anywhere you want.
+
+```php
+use SendGrid;
+use SendGridTransportModule\SendGridTransport;
+
+class SomeControllerOrServiceOrHelper 
+{
+    public function someMethod()
+    {
+        $mail = new Mail\Message();
+        $mail->setBody('This is the text of the email.');
+        $mail->setFrom(new Mail\Address('test@example.org', 'Sender\'s name'));
+        $mail->addTo(new Mail\Address('some@address.com', 'User Name'));
+        $mail->setSubject('TestSubject');
+
+        $sendGrid = new SendGrid('YOUR_API_KEY');
+        $sendGridEmail = new SendGrid\Email();
+        $sendGridTransport = new SendGridTransport($sendGrid, $sendGridEmail);
+
+        $sendGridTransport->send($mail);
+    }
+}
+```
+
+> Is strongly recommended to use the already registered service.
+
+
 
 ## CONTRIBUTING
 
-You can contribute with this module suggesting improvements, making tests and reporting bugs. Use [issues](https://github.com/andrebian/sendgrid-transport-module/issues) for this.
+You can contribute with this module suggesting improvements, making tests and reporting bugs. Use [issues](https://github.com/andrebian/sendgrid-transport-module/issues) for that.
 
 
 ## LICENSE

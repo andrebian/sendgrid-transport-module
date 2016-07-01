@@ -29,7 +29,8 @@
     "psr-4": {
       "SendGridTransportModule\\": [
         "src/SendGridTransportModule"
-      ]
+      ],
+      "classmap": ["Module.php"]
     }
   },
   "autoload-dev": {

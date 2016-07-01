@@ -10,13 +10,9 @@
     <filter>
         <whitelist>
             <directory suffix=".php">../src</directory>
-            <exclude>
-                <directory suffix=".php">../tests/</directory>
-            </exclude>
         </whitelist>
     </filter>
     <logging>
         <log type="coverage-html" target="./_reports/codeCoverage" charset="UTF-8" yui="true" highlight="true" lowUpperBound="35" highLowerBound="75"/>
-        <log type="testdox-text" target="./_reports/testdox.txt" />
     </logging>
 </phpunit>

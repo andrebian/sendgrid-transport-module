@@ -14,7 +14,7 @@ chdir(__DIR__);
 
  * Test bootstrap, for setting up autoloading
  */
-class ApplicationBootstrap
+class SendGridTransportModuleBootstrap
 {
 
     protected static $serviceManager;
@@ -131,5 +131,5 @@ class ApplicationBootstrap
 
 }
 
-ApplicationBootstrap::init();
-ApplicationBootstrap::chroot();
+SendGridTransportModuleBootstrap::init();
+SendGridTransportModuleBootstrap::chroot();

@@ -38,8 +38,8 @@ class SendGridTransport implements TransportInterface
      */
     public function send(Message $message)
     {
-        $this->email->addTo($message->getTo()->current()->getEmail(), $message->getTo()->current()->getName())
-            ->setFrom($message->getFrom()->current()->getEmail(), $message->getFrom()->current()->getName())
+        $this->email->setTos([$message->getTo()->current()->getEmail()])
+            ->setFrom($message->getFrom()->current()->getEmail())
             ->setSubject($message->getSubject())
             ->setHtml($message->getBodyText());
 

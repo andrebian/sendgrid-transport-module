@@ -33,7 +33,7 @@ class SendGridTransportTest extends PHPUnit_Framework_TestCase
         $sendGrid->shouldReceive('send')->andReturn($sendGridResponse);
 
         $email = $mockery->mock('SendGrid\Email');
-        $email->shouldReceive('addTo')->andReturn($email);
+        $email->shouldReceive('setTos')->andReturn($email);
         $email->shouldReceive('setFrom')->andReturn($email);
         $email->shouldReceive('setSubject')->andReturn($email);
         $email->shouldReceive('setHtml')->andReturn($email);

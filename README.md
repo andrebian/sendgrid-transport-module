@@ -25,10 +25,9 @@ After install follow one of these steps:
 
 Then put your SendGrid API Key. To get your API Key, please visit https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/api_keys.html
 
-#### Full example
 
 ```php
-# config/autoload/mail.global.php
+// config/autoload/mail.global.php
 
 return array(
     'mail' => array(
@@ -39,7 +38,29 @@ return array(
 );
 ```
 
-## USING
+After all, you must register `SendGridTransportModule` in your `config/application.config.php`.
+
+```php
+// config/application.config.php
+return [
+    'modules' => [
+        'YourPreviousModules',
+        'SendGridTransportModule'
+    ],
+    'module_listener_options' => [
+        'module_paths' => [
+            './module',
+            './vendor',
+        ],
+        'config_glob_paths' => [
+            'config/autoload/{{,*.}global,{,*.}local}.php',
+            'module/{*}/config/autoload/{{,*.}global,{,*.}local}.php',
+        ],
+    ]
+];
+```
+
+## USAGE
 
 ### Via Service
 

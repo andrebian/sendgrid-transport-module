@@ -16,9 +16,7 @@
   ],
   "require" : {
     "php": ">=5.3.3",
-    "zendframework/zend-modulemanager": "2.*",
-    "zendframework/zend-eventmanager": "2.*",
-    "zendframework/zend-servicemanager": "2.*",
+    "zendframework/zend-modulemanager": "2.* || ^3.0",
     "sendgrid/sendgrid": "4.0.4"
   },
   "require-dev": {
